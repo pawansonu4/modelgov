@@ -6,6 +6,9 @@ import os
 app = Flask(__name__)
 client = bigquery.Client()
 
+
+
+
 @app.route('/')
 def main(big_query_client=client):
     table_id = "udemy-mlops-395416.test_schema.us_states"
